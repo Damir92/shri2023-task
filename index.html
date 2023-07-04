@@ -15,7 +15,6 @@
     <link rel="preload" as="image" href="assets/icon_temperature.svg">
     <link rel="preload" as="image" href="assets/logo.svg">
     <link rel="preload" as="image" href="assets/bg@2x.png">
-    <script async src="vendors/react-with-dom.min.js"></script>
     <link rel="stylesheet" type="text/css" href="reset.min.css">
     <link rel="stylesheet" type="text/css" href="styles.min.css">
 </head>
@@ -45,6 +44,8 @@
 </footer>
 
 <script defer src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script defer crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script defer crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
 <script type="text/babel">
     function Header() {
         let [expanded, setExpanded] = React.useState(false);
